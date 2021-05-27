@@ -1,0 +1,21 @@
+<script>
+  document.write("Suppose you have an array of 101 integers. This array is already sorted and all numbers in this array are consecutive. Each number only occurs once in the array except one number which occurs twice. Write a js code to find the repeated number.e.g $arr = [0,1,2,3,4,5,6,7,7,8,9,10,11,11,12,13,14,14,15]; :<br><br>");
+  document.write("Answer :<br><br>");
+	function RepeatingNumber(array , size)
+	{
+		var i, j;
+		document.write("Repeated Number are :");
+		for (i = 0; i < size; i++)
+		{
+			for (j = i + 1; j < size; j++)
+			{
+				if (array[i] == array[j])
+					document.write(array[i] + " ");
+			}
+		}
+	}
+
+var array = [0,1,2,3,4,5,6,7,7,8,9,10,11,11,12,13,14,14,15];
+var array_size = array.length;
+RepeatingNumber(array, array_size);
+</script>
